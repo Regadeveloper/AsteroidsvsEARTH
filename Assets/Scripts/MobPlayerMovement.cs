@@ -7,6 +7,7 @@ public class MobPlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     public int vel;
     public float maxHeight;
+    public SpriteRenderer playerRenderer;
     // Start is called before the first frame update
     private void Start()
     {
@@ -38,7 +39,16 @@ public class MobPlayerMovement : MonoBehaviour
         if (collision.collider.tag == "enemySide")
         {
             Debug.Log("Player daño" + (Globals.health-1));
+            playerRenderer.color = new Color(100, 256, 0);
             PlayerDamage();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "enemySide")
+        {
+            playerRenderer.color = new Color(256, 256, 256);
         }
     }
 
