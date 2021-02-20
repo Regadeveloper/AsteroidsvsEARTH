@@ -26,12 +26,21 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("tocando al player");
+        Debug.Log("Enemy daño" + (Globals.enemyHealth-1));
         enemyRenderer.color = new Color(0, 0, 256);
         Globals.enemyHealth -= 1;
+        if (Globals.enemyHealth <= 0)
+        {
+            killEnemy();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
+    {
+        enemyRenderer.color = new Color(256, 0, 0);
+    }
+
+    public void EnemyDamage()
     {
         enemyRenderer.color = new Color(256, 0, 0);
         if (Globals.enemyHealth <= 0)

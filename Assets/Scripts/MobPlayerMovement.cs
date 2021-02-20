@@ -32,4 +32,29 @@ public class MobPlayerMovement : MonoBehaviour
 
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.tag == "enemySide")
+        {
+            Debug.Log("Player daño" + (Globals.health-1));
+            PlayerDamage();
+        }
+    }
+
+    protected void PlayerDamage()
+    {
+        Globals.health -= 1;
+        if (Globals.health <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+
 }
