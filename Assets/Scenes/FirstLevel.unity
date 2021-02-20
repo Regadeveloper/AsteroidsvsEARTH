@@ -531,7 +531,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &1305524902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,6 +714,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a90ab8a4621a542923440519522b3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &1897771946 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5209724042056104700, guid: 8793de270eb8dad46ae081b4555ff858,
+    type: 3}
+  m_PrefabInstance: {fileID: 6882893411945397179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2785943618488737273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -794,6 +800,10 @@ PrefabInstance:
       propertyPath: vel
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 222283878, guid: 8793de270eb8dad46ae081b4555ff858, type: 3}
+      propertyPath: playerRenderer
+      value: 
+      objectReference: {fileID: 1897771946}
     - target: {fileID: 1656300838149255083, guid: 8793de270eb8dad46ae081b4555ff858,
         type: 3}
       propertyPath: m_Name
@@ -858,6 +868,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209724042056104700, guid: 8793de270eb8dad46ae081b4555ff858,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 81f328aa182994a46b11bfbf2282aae5,
+        type: 3}
+    - target: {fileID: 5209724042056104700, guid: 8793de270eb8dad46ae081b4555ff858,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209724042056104700, guid: 8793de270eb8dad46ae081b4555ff858,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209724042056104700, guid: 8793de270eb8dad46ae081b4555ff858,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8793de270eb8dad46ae081b4555ff858, type: 3}
