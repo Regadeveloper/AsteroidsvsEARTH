@@ -8,7 +8,11 @@ public class MobPlayerMovement : MonoBehaviour
     public int vel;
     public float maxHeight;
     // Start is called before the first frame update
-
+    private void Start()
+    {
+        Globals.health = 10;
+        Globals.enemyHealth = 10;
+    }
     // Update is called once per frame
     void Update()
     {

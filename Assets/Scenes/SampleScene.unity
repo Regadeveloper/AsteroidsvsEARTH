@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 89609338}
   - component: {fileID: 89609339}
   m_Layer: 0
-  m_Name: Right
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -332,7 +332,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.8962264, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -371,12 +371,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c8d78afab49e754c9b993218c8775cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  center: {fileID: 0}
-  left: {fileID: 0}
-  right: {fileID: 0}
-  damageBox: {fileID: 153303754}
-  hitBox: {fileID: 0}
-  hitBoxTwo: {fileID: 0}
+  center: {fileID: 1604545032}
+  left: {fileID: 89609337}
+  right: {fileID: 1226551728}
+  damageBox: {fileID: 1604545034}
+  hitBox: {fileID: 89609339}
+  hitBoxTwo: {fileID: 1226551730}
   enemyRenderer: {fileID: 153303757}
 --- !u!1 &519420028
 GameObject:
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 1226551729}
   - component: {fileID: 1226551730}
   m_Layer: 0
-  m_Name: Left
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,6 +651,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 222283878, guid: 8793de270eb8dad46ae081b4555ff858, type: 3}
+      propertyPath: vel
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1656300838149255083, guid: 8793de270eb8dad46ae081b4555ff858,
         type: 3}
       propertyPath: m_Name
