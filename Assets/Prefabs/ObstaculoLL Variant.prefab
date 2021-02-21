@@ -22,6 +22,16 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7885002024432950294, guid: 686772b03634f834e8d5dc700564cf6f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885002024432950294, guid: 686772b03634f834e8d5dc700564cf6f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -479617473
+      objectReference: {fileID: 0}
     - target: {fileID: 7885002025209505860, guid: 686772b03634f834e8d5dc700564cf6f,
         type: 3}
       propertyPath: m_Color.b
@@ -37,6 +47,16 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7885002025209505860, guid: 686772b03634f834e8d5dc700564cf6f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7885002025209505860, guid: 686772b03634f834e8d5dc700564cf6f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -479617473
+      objectReference: {fileID: 0}
     - target: {fileID: 7885002025209505861, guid: 686772b03634f834e8d5dc700564cf6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47,10 +67,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.11
       objectReference: {fileID: 0}
+    - target: {fileID: 7885002025954127554, guid: 686772b03634f834e8d5dc700564cf6f,
+        type: 3}
+      propertyPath: vel
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 7885002025954127555, guid: 686772b03634f834e8d5dc700564cf6f,
         type: 3}
       propertyPath: m_Name
-      value: ObstaculoLL
+      value: ObstaculoLL Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7885002025954127557, guid: 686772b03634f834e8d5dc700564cf6f,
         type: 3}

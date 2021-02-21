@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MobPlayerMovement : MonoBehaviour
 {
@@ -64,6 +65,11 @@ public class MobPlayerMovement : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ResetLevel()
+    {
+        SceneManager.LoadScene("FirstLevel");
     }
 
 

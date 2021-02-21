@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject [] obstacles ;
+    public float tSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator spawn()
     {
         Instantiate(obstacles[Random.Range(0, obstacles.Length)], new Vector3(0, 4.33f), Quaternion.identity);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(tSpawn);
         IniciarSpawn();
 
     }

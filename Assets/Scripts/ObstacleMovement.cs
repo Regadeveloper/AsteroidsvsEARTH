@@ -16,4 +16,5 @@ public class ObstacleMovement : MonoBehaviour
     {
         transform.position += new Vector3(0, -vel,0);
     }
+
 }
