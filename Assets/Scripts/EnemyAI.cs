@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    public GameObject center;
-    public GameObject left;
-    public GameObject right;
     public BoxCollider2D damageBox;
-    public BoxCollider2D hitBox;
-    public BoxCollider2D hitBoxTwo;
     public SpriteRenderer enemyRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -37,7 +32,7 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        enemyRenderer.color = new Color(256, 0, 0);
+        enemyRenderer.color = new Color(255,2399,0);
     }
 
     public void EnemyDamage()
@@ -51,6 +46,6 @@ public class EnemyAI : MonoBehaviour
 
     private void killEnemy()
     {
-        Destroy(this.gameObject);
+        Destroy(this.GetComponentInParent<SpriteRenderer>());
     }
 }

@@ -53,7 +53,7 @@ public class MobPlayerMovement : MonoBehaviour
         if (collision.collider.tag == "enemySide")
         {
             Debug.Log("Player daño" + (Globals.health-1));
-            playerRenderer.color = new Color(100, 256, 0);
+            playerRenderer.color = new Color(0, 100, 256);
             PlayerDamage();
         }
     }
@@ -80,6 +80,7 @@ public class MobPlayerMovement : MonoBehaviour
     {
         gameOverCanvas.enabled = true;
         Destroy(this.rb);
+        Destroy(this.playerRenderer);
     }
 
     public void ExitGame()
